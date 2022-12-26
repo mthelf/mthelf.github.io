@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(() => {
 
         document.getElementById("splashscreen").classList.add('hidden');
-    }, 3000);
+    }, 2000);
 } )
 

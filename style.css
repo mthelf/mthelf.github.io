@@ -20,7 +20,9 @@ background: #272822;
 
 .bg {
     display: flex;
-    background-color: black;
+    justify-content: center;
+    position: relative;
+    background-color: #f3f3f3;
     top: 0;
     left: 0;
     height: 100vh;
@@ -28,33 +30,45 @@ background: #272822;
 }
 
 .image {
-    position: relative;
-    top: 0;
-    left: 0;
+    display: block;
+    margin-left: auto;
+    padding-top: 5%;
+    margin-right: auto;
     overflow: hidden;
 }
 
 .navbar.navbar-expand-lg {
-    background-color:#333333;
+    background-color:#f3f3f3;
     height: 64px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 180;
+    font-size: 32px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 } 
 
 
 .nav-item :hover{
-    color: #a00000;
-    background-color: #202020;
+    color: #0A2647;
+    background-color: #cccccc;
 }
 
+.active {
+    color: #0A2647;
+    background-color: #cccccc;
+}
 .nav-link {
-    color: #800000;
+    color: #0A2647;
+
 }
 
 .welcome {
-    color: #800000;
+    font-family: garamond;
+    src: url("garamond-italic.ttf");
+    font-style: italic;
+    font-size: 2em;
+    color: #0A2647;
 }
 
 
