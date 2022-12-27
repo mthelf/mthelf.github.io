@@ -58,6 +58,7 @@ background: #272822;
     color: #0A2647;
     background-color: #cccccc;
 }
+
 .nav-link {
     color: #0A2647;
 
@@ -69,6 +70,7 @@ background: #272822;
     font-style: italic;
     font-size: 2em;
     color: #0A2647;
+    width: 190px;
 }
 
 
