@@ -14,8 +14,17 @@
     --parColour: #F8F8F2;
 }
 
-body {
-background: #272822;
+.body {
+    position: relative;
+    font-family: EB Garamond;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+.smooth {
+    overflow-y: scroll;
 }
 
 .hr1 {
@@ -77,8 +86,24 @@ background: #272822;
     padding-top: 40px;
     text-align: center;
     font-size: 1.25em;
-    font-style: italic;
     height: calc(100vh - 64px);
+}
+
+.italics {
+    font-style: italic;
+}
+
+.about-head {
+    text-align: center;
+    font-size: 1.25em;
+    padding-top: 10vh;
+}
+
+.about {
+    display: flex;
+    float: left;
+    text-align: left;
+    padding-left: 30vw;
 }
 
 .name-pad {

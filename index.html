@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<body style="font-family: EB Garamond;">
+<body data-spy="scroll" data-target=".navbar" data-offset="64">
     <div class ="splashscreen" id="splashscreen">
         <div class="loader-container">
-    
             <div class="group-1">
               <div class="line line1">
                 <div class="dash dash-1 exp-40 div"></div>
@@ -69,26 +69,28 @@
             </div>
           </div>
         </div>
+    <div id="">
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CTFs</a>
+                </li>
+            </ul>
+    
+        </nav>
+    </div>
 
-    <nav id="home" class="navbar navbar-expand-lg">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CTFs</a>
-            </li>
-        </ul>
-
-    </nav>
-
-    <div class="bg top-wrapper">
+<div class="smooth">
+    <div id="home" class="bg top-wrapper">
         <div>
             <div class="connect">
                 <p>Hi there, thanks for visiting my website! I'd love to  
@@ -114,12 +116,26 @@
                 </a>
             </div>
         </div>
-        <hr class="hr1">
+        
         <div id="about" style="height: 1500px;">
-
+            <hr class="hr1">
+            <div class="about-head">
+                <h1 style="text-decoration: underline; font-style: italic;">About Me</h1>
+                <div class="about">
+                    <img src="Helf, Michael.jpg" alt="Helf, Michael" width="256" height="412">
+                    <p style="width: 25vw;">I am currently completing my Bachelors of Science in Computer Science 
+                     and offer a strong background in computational mathematics 
+                    along with algorithm design and analysis. 
+                    I have a strong passion for cybersecurity 
+                    and have dedicated much of my time to independent studies
+                     as a way to further my skills and knowledge beyond university curriculum. 
+                    Along with being a full-time student, I have maintained a concurred full time
+                    position at Whole Foods Market.</p>   
+                </div>
+            </div>
         </div>
     </div>
-
+</div>
 
 </body>
 </html>
