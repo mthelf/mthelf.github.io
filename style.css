@@ -16,28 +16,22 @@
 
 .body {
     position: relative;
-    font-family: EB Garamond;
 }
 
 html {
     scroll-behavior: smooth;
 }
   
-.smooth {
+/* .smooth {
     overflow-y: scroll;
-}
-
-.hr1 {
-    border: 0;
-    height: 6px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(10, 38, 71), rgba(0, 0, 0, 0));
-}
+    width: 100%;
+} */
 
 .bg {
-
     justify-content: center;
     color: #0A2647;
     background-color: #f3f3f3;
+    font-family: 'Merriweather', serif;
 }
 
 .scrolldown {
@@ -97,19 +91,59 @@ html {
     text-align: center;
     font-size: 1.25em;
     padding-top: 10vh;
+    color: #f3f3f3;
 }
 
+.lato {
+    font-family: 'Lato', serif;
+}
+
+.about-cont {
+    background-color: #111111;
+    height: 100vh;
+}
 .about {
     display: flex;
     float: left;
     text-align: left;
     padding-left: 30vw;
+    color: #838C95;
+}
+
+.about-desc {
+    width: 25vw; 
+    padding-left: 10px;
 }
 
 .name-pad {
     padding-top: 15vh;
     font-size: 90px;
+    font-family: 'Lato', sans-serif;
     font-style: italic;
+}
+
+.skills {
+    clear: both;
+    padding-left: 25vw;
+    padding-top: 5vh;
+    text-align: left;
+    padding-right: 25vw;
+}
+
+.skills-lists {
+    width: 25vw;
+}
+
+.inline-block {
+    display: flex;
+}
+
+
+
+.skills li {
+    color: #838C95;
+    text-indent: 1em;
+    padding-top: 1em;
 }
 
 .no-bulls {
@@ -132,6 +166,7 @@ li.icons {
     z-index: 180;
     font-size: 32px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    font-family: 'Lato', sans-serif;
 } 
 
 
