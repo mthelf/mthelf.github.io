@@ -102,7 +102,7 @@ html {
 .about-cont {
     background-color: #111111;
     height: auto;
-    font-size: .75em;
+    font-size: 1em;
 }
 
 .about {
@@ -115,7 +115,6 @@ html {
 }
 
 .about-desc {
-
     padding-left: 10px;
 }
 
@@ -183,8 +182,9 @@ img {
     flex-direction: row;
     padding-left: 15vw;
     padding-right: 15vw;
-    padding-bottom: 5vw;
+    padding-bottom: 2.5vw;
 }
+
 
 .project-desc {
     width: 75%;
@@ -197,7 +197,7 @@ img {
 .projects-header {
     text-align: center;
     font-size: 1.25em;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-bottom: 2.5vh;
     font-style: italic;
     text-decoration: underline;
@@ -232,7 +232,6 @@ img {
 
 .nav-link {
     color: #0A2647;
-
 }
 
 .sl-cont {
