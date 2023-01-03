@@ -157,7 +157,7 @@
                                 </li>
                                 <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Camden County College
                                     <ul>
-                                        <li class="no-bulls li-sub">Associate in Science, Computer Science | Dec 2021</li>
+                                        <li class="no-bulls li-sub">Associate of Science, Computer Science | Dec 2021</li>
                                     </ul>
                                 </li>
                             </ol>
@@ -171,43 +171,139 @@
             <div class="projects-header">
                 <h1 class="lato">Projects</h1>
             </div>
-            <div class="sl-cont">
-                <div class="slideshow-container">
-
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="img_nature_wide.jpg" style="width:100%">
-                      <div class="text">Caption Text</div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="img_snow_wide.jpg" style="width:100%">
-                      <div class="text">Caption Two</div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="img_mountains_wide.jpg" style="width:100%">
-                      <div class="text">Caption Three</div>
-                    </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-                    
-                    </div>
-                    <br>
-                    
-                    <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span> 
-                      <span class="dot" onclick="currentSlide(2)"></span> 
-                      <span class="dot" onclick="currentSlide(3)"></span> 
-                    </div>
+            <div class="lp-calc">
+                <h3>"Laser Peacock's Nutritional Calculator"</h3>
             </div>
+            <div class="project-descriptions-cont">
+                <div class="sl-cont">
+                    <div class="slideshow-container">
+                        <div class="mySlides1">
+                          <img src="sand.png" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides1">
+                          <img src="meat.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides1">
+                            <img src="finalcalc.JPG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides1">
+                          <img src="db.JPG" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+                        <a class="next" onclick="plusSlides(1, 0)">❯</a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot1" onclick="currentSlide(1, 0)"></span> 
+                          <span class="dot1" onclick="currentSlide(2, 0)"></span> 
+                          <span class="dot1" onclick="currentSlide(3, 0)"></span> 
+                          <span class="dot1" onclick="currentSlide(4, 0)"></span> 
+                        </div>
+                </div>
+                <div class="project-desc">
+                    <h5>Languages:</h5>
+                    <p>
+                        PHP, HTML/CSS, SQL
+                    </p>
+                    <h5>Description:</h5>
+                    <p>
+                        This project was done as part of a group for my Software Engineering course. I 
+                        was one of the two developers on the project. My contributions included the frontend 
+                        HTML/CSS as well as many of the connections/calculations to the backend relational SQL 
+                        Database. Code can be found via my Github link.  
+                    </p>
+                </div>
+            </div>
+
+            <div class="lp-calc">
+                <h3>"Customer Billing System"</h3>
+            </div>
+            <div class="project-descriptions-cont">
+                <div class="sl-cont">
+                    <div class="slideshow-container">
+                        <div class="mySlides2">
+                          <img src="CBS1.png" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides2">
+                          <img src="CBS2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides2">
+                            <img src="CBS3.png" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+                        <a class="next" onclick="plusSlides(1, 1)">❯</a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot2" onclick="currentSlide(1, 1)"></span> 
+                          <span class="dot2" onclick="currentSlide(2, 1)"></span> 
+                          <span class="dot2" onclick="currentSlide(3, 1)"></span> 
+
+                        </div>
+                </div>
+                <div class="project-desc">
+                    <h5>Language:</h5>
+                    <p>
+                        C
+                    </p>
+                    <h5>Description:</h5>
+                    <p>
+                        In this project I was tasked with creating a simple customer billing system. This system
+                        would allow an administrator to create a bill, let the administrator view a list of all 
+                        the created bills for every customer, and allow customers to enter into the system with their 
+                        ID and view a record of their bills. Code can be found vie my Github link.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
 
+
+<script>
+    let slideIndex = [1,1];
+    let slideId = ["mySlides1", "mySlides2"]
+    let dotId = ["dot1", "dot2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+    function currentSlide(n, no) {
+        showSlides(slideIndex[no] = n, no);
+    }
+
+    function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    let dots = document.getElementsByClassName(dotId[no]);
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+    dots[slideIndex[no]-1].className += " active";
+    }
+
+</script>
 </body>
 </html>
 
