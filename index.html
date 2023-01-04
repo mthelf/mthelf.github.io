@@ -216,7 +216,7 @@
                         This project was done as part of a group for my Software Engineering course. I 
                         was one of the two developers on the project. My contributions included the frontend 
                         HTML/CSS as well as many of the connections/calculations to the backend relational SQL 
-                        Database. Code can be found via my Github link.  
+                        Database. Code can be found via my GitHub link.  
                     </p>
                 </div>
             </div>
@@ -261,22 +261,69 @@
                         In this project I was tasked with creating a simple customer billing system. This system
                         would allow an administrator to create a bill, let the administrator view a list of all 
                         the created bills for every customer, and allow customers to enter into the system with their 
-                        ID and view a record of their bills. Code can be found vie my Github link.
+                        ID and view a record of their bills. Code can be found via my Github link.
                     </p>
                 </div>
             </div>
 
+            <div class="lp-calc">
+              <h3>"Princeton COS 126"</h3>
+          </div>
+          <div class="project-descriptions-cont">
+              <div class="sl-cont">
+                  <div class="slideshow-container">
+                      <div class="mySlides3">
+                        <img src="Sierpinski.JPG" style="width:100%">
+                      </div>
+                      
+                      <div class="mySlides3">
+                        <img src="PhotoMagic.JPG" style="width:100%">
+                      </div>
+
+                      <div class="mySlides3">
+                          <img src="TSP.JPG" style="width:100%">
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1, 2)">❮</a>
+                      <a class="next" onclick="plusSlides(1, 2)">❯</a>
+                      
+                      </div>
+                      <br>
+                      
+                      <div style="text-align:center">
+                        <span class="dot3" onclick="currentSlide(1, 2)"></span> 
+                        <span class="dot3" onclick="currentSlide(2, 2)"></span> 
+                        <span class="dot3" onclick="currentSlide(3, 2)"></span> 
+
+                      </div>
+              </div>
+              <div class="project-desc">
+                  <h5>Language:</h5>
+                  <p>
+                      Java
+                  </p>
+                  <h5>Description:</h5>
+                  <p>
+                      I did a community audit of this course in August of 2022. Pictured to the
+                      left are three of said assignments. The first is a Sierpinski Triangle with a 
+                      degree of 3. The second is uses a Linear-Feedback Shift Register to encrypt images.
+                      Finally, the third is an output for the Traveling Salesperson Problem with both 
+                      the insert nearest and insert smallest heuristics. Code for all assignment can be 
+                      found via my GitHub link.
+                  </p>
+              </div>
         </div>
     </div>
 </div>
 
 
 <script>
-    let slideIndex = [1,1];
-    let slideId = ["mySlides1", "mySlides2"]
-    let dotId = ["dot1", "dot2"]
+    let slideIndex = [1,1,1];
+    let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+    let dotId = ["dot1", "dot2", "dot3"]
     showSlides(1, 0);
     showSlides(1, 1);
+    showSlides(1, 2);
 
     function plusSlides(n, no) {
         showSlides(slideIndex[no] += n, no);
