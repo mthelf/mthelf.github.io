@@ -197,7 +197,7 @@ li.icons {
 .projects-header {
     text-align: center;
     font-size: 1.25em;
-    padding-top: 5vh;
+    padding-top: 10vh;
     padding-bottom: 2.5vh;
     font-style: italic;
     text-decoration: underline;
@@ -215,6 +215,29 @@ li.icons {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     font-family: 'Lato', sans-serif;
 } 
+
+.pact-cont {
+    background-color: #111111;
+    height: auto;
+    text-align: center; 
+    color: #838C95;
+}
+
+.pact-header {
+    padding-top: 10vh; 
+    text-align: center;
+    color: #f3f3f3;
+    text-decoration: underline;
+    font-style: italic;
+    padding-bottom: 2.5vh;
+}
+
+.pact-desc {
+    text-align: center;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-bottom: 5vh;
+}
 
 .navbar-nav {
     flex-direction: column;
